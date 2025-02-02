@@ -1,0 +1,123 @@
+import React from "react";
+import Navbar from "./Navbar";
+
+function Home() {
+  return (
+    <>
+      <div className="lg:full md:w-full w-full md:flex md:h-[982px] ">
+        <div className="nav w-full md:w-full lg:w-full">
+          <Navbar />
+        </div>
+
+        <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16">
+          <div className="px-4 pt-[380px]  md:pt-[550px]">
+            <h1 className=" leading-[77px] text-white text-[64px]  text-400">
+              Redefining <br />
+              Energy
+            </h1>
+            <p className="pt-[48px] sm:pr-12 text-white pr-8">
+              As market leaders for 20 years, we are experts in energy
+              efficiency, providing tailored, concrete solutions to meet your
+              needs.
+            </p>
+            <button className="px-[40px] py-[16px] mt-[48px] bg-white rounded-[40px]">
+              View our Portfolio
+            </button>
+          </div>
+        </div>
+        <div className="lg:full md:w-[50%] md:h-[982px]">
+          <img
+            src="./images/bg.svg"
+            className="w-full h-full object-cover md:w-full md:h-[982px] md:object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+
+
+
+
+      <div className="w-full h-[680px] md:h-[833px] flex md:justify-center md:items-center mt-4">
+        <div className=" w-[90%] h-[553px] 2xl:pl-[200px] pl-4">
+          <div>
+            <h1 className="text-[40px] leading-[48px] text-400 ">
+              Areas of Expertise
+            </h1>
+            <p className="mt-[40px] text-[18px] leading-[25px]">
+              Whether for small or large-scale projects, we are committed to
+              delivering cutting-edge results,
+              <br className="hidden lg:block" /> contributing to a more
+              sustainable and innovative energy future.
+            </p>
+          </div>
+          <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
+            <div className="md:flex flex w-[1300px] gap-[20px] md:overflow-hidden ">
+              <div className="mt-[40px] w-[313px] h-[375px] ">
+                <img src="./images/frame1.svg" alt="" />
+              </div>
+              <div className="mt-[40px] w-[313px] h-[375px] ">
+                <img src="./images/frame2.svg" alt="" />
+              </div>
+              <div className="mt-[40px] w-[313px] h-[375px] ">
+                <img src="./images/frame3.svg" alt="" />
+              </div>
+              <div className="mt-[40px] w-[313px] h-[375px] ">
+                <img src="./images/frame4.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-ful md:h-[250px] h-[300px] flex ">
+        <div className="w-full md:w-[40%] hidden md:block"></div>
+        <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 ">
+          <p className="pr-14">
+            Leading the market for two decades, we have been experts in energy
+            efficiency. With an unwavering commitment to innovation, we offer
+            tailored solutions for projects of all sizes. From LED lighting to
+            photovoltaic energy and electric mobility, our dedicated team works
+            tirelessly to deliver cutting-edge results. We are committed to
+            shaping a more sustainable and efficient energy future.
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full h-[1,206px] 2xl:h-[800px]  bg-[#F4F4F4] flex justify-center  ">
+
+
+        <div className=" relative md:bottom-16 md:w-[86%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
+
+
+          <div className="md:w-[50%] w-full 2xl:h-[590px] ">
+            <img className="md:w-full " src="./images/apar.svg" alt="" />
+          </div>
+
+
+
+          <div className="md:w=[50%] w-full md:mt-28 mt-8 2xl:mt-[300px]">
+          <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
+            <p className="text-[18px] text-400 leading-[25px] mt-10">
+              Our extensive experience and deep expertise in the energy sector
+              have positioned us as leaders in the industry. With two decades of
+              market leadership, we have honed our knowledge in energy
+              efficiency, LED lighting, photovoltaic energy, and electric
+              mobility to a level that sets us apart. Our team's profound
+              understanding of these domains enables us to provide innovative,
+              tailored solutions that not only meet but exceed the expectations
+              of our clients.
+            </p>
+            <div className="mt-10 text-[18px] text-400 leading-[25px]">
+                <a href="">Learn more..</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Home;

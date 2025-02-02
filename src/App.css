@@ -1,0 +1,25 @@
+.btn{
+    background-color: #8e9ea7;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 57px;
+}
+.navbar-a{
+    color: #ffffff;
+}
+.span{
+    color: #ffffff;
+    font-size: 21.14px;
+    font-weight: 400;
+}
+.P-tag{
+    font-size: 21.14px;
+    font-weight: 300;
+    color:#A6A6AB;
+}
+
+.nav{
+    position: absolute;
+}
