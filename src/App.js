@@ -30,6 +30,10 @@ function App() {
       path: "/contact",
       element: <Contact />
     },
+    {
+      path: "/legalpage",
+      element: <Legalpage />
+    },
   ])
   return (
     <>

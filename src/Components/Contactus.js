@@ -48,7 +48,7 @@ function Contact() {
                 </div>
                 <div className='lg:full bg-[#F4F4F4] md:w-full w-full md:h-[982px] h-[813px] lg:px-16 px-4'>
 
-                    <div className='pt-[450px]'>
+                    <div className='pt-[550px] md:h-auto'>
                         <h1 className="text-[40px] text-400 leading-[48px]">Contact us</h1>
                         <div className='md:w-[535px]'>
                             <p className="text-[18px] text-400 leading-[25px] mt-10">
@@ -63,7 +63,7 @@ function Contact() {
 
 
 
-            <div className="h-[700px] bg-white">
+            <div className="h-[700px] bg-white mt-[100px]">
                 <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Left Column - Location Info */}

@@ -34,13 +34,13 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
   return (
     <>
       <div className='md:w-full flex h-[109px] md:px-4 lg:px-16 w-full items-center justify-between px-5 pt-[16px]' style={{ backgroundColor }}>
-        <div style={{ color: Color }} className='flex justify-center items-center'>
+      <Link to="/"><div style={{ color: Color }} className='flex justify-center items-center'>
           <img className='mr-4' src='./images/logo.svg' alt='' />
           <p className='P-tag'>
             <span className='block span'>Oaklan</span>
             Energy Consulting
           </p>
-        </div>
+        </div></Link>
 
         {/* Desktop menu */}
         <div className='md:block hidden'>
@@ -48,12 +48,12 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
           <Link className='navbar-a md:mx-4 md:text-[18px]' style={{ color: Color }} to="/services">Services</Link>
           <Link className='navbar-a md:mx-4 md:text-[18px]' style={{ color: Color }} to="/portfolio">Portfolio</Link>
           <Link className='navbar-a md:mx-4 md:text-[18px]' to="/contact">
-            <button style={{ backgroundColor: buttonColor, color: Color ,   opacity: buttonOpacity}} className='btn md:px-[40px] md:py-[16px];'>Contact us</button>
+            <button style={{ backgroundColor: buttonColor, color: buttontextcolor,  opacity: buttonOpacity}} className='btn md:px-[40px] md:py-[16px];'>Contact us</button>
           </Link>
         </div>
 
         {/* Mobile menu icon */}
-        <div className='md:hidden'>
+        <div className='md:hidden rounded-[50%]' style={{ backgroundColor: buttonColor }}>
           <a href="#" onClick={toggleMenu}>
             <img src="./images/menu.svg" alt="" />
           </a>
@@ -68,14 +68,14 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
             style={{ color: Color }}
             className="flex flex-col items-center bg-[#A6A6AB] rounded-lg shadow-lg p-8 w-3/4 md:w-1/2"
           >
-            <a className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" href="">About us</a>
-            <a className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" href="">Services</a>
-            <a className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" href="">Portfolio</a>
-            <a className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" href="">
+            <Link className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" to="/about">About us</Link>
+            <Link className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" to="/services">Services</Link>
+            <Link className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" to="/portfolio">Portfolio</Link>
+            <Link className="navbar-a text-xl md:text-[20px] p-4 hover:text-blue-600 transition-colors" to="/contact">
               <button className="btn bg-blue-600 text-white px-8 py-4 rounded-lg mt-6 hover:bg-blue-700 transition-all">
                 Contact us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

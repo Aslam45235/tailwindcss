@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -39,7 +40,7 @@ function Home() {
 
 
 
-      <div className="w-full h-[680px] md:h-[833px] flex md:justify-center md:items-center mt-4">
+      <div className="w-full h-[680px] md:h-[710px] flex md:justify-center md:items-center mt-4">
         <div className=" w-[90%] h-[553px] 2xl:pl-[200px] pl-4">
           <div>
             <h1 className="text-[40px] leading-[48px] text-400 ">
@@ -74,7 +75,7 @@ function Home() {
       <div className="w-ful md:h-[250px] h-[300px] flex ">
         <div className="w-full md:w-[40%] hidden md:block"></div>
         <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 ">
-          <p className="pr-14">
+          <p className="pr-14 text-[18px]">
             Leading the market for two decades, we have been experts in energy
             efficiency. With an unwavering commitment to innovation, we offer
             tailored solutions for projects of all sizes. From LED lighting to
@@ -85,13 +86,13 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[1,206px] 2xl:h-[800px]  bg-[#F4F4F4] flex justify-center  ">
+      <div className="w-full h-[1206px] md:h-[700px] 2xl:h-[800px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
 
 
         <div className=" relative md:bottom-16 md:w-[86%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
 
 
-          <div className="md:w-[50%] w-full 2xl:h-[590px] ">
+          <div className="md:w-[100%] lg:w-[50%] w-full 2xl:h-[590px] ">
             <img className="md:w-full " src="./images/apar.svg" alt="" />
           </div>
 
@@ -124,11 +125,11 @@ function Home() {
             If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals.
           </p>
           <div className="mt-10 text-[18px] text-400 leading-[25px]">
-            <a href="">Contact us..</a>
+          <Link to="/contact" className="border-b-[2px] border-[#F4F4F4] pb-2 px-[1px]" >Contact us</Link>
           </div>
         </div>
-
       </div>
+
       <div className="md:mt-[50px] mt-[50px]">
       <Footer/>
       </div>
