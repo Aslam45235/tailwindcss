@@ -6,20 +6,25 @@
     font-weight: 400;
     height: 57px;
 }
-.navbar-a{
-    color: #ffffff;
-}
 .span{
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 21.14px;
     font-weight: 400;
 }
 .P-tag{
     font-size: 21.14px;
     font-weight: 300;
-    color:#A6A6AB;
+    /* color:#A6A6AB; */
 }
 
 .nav{
     position: absolute;
+}
+
+.dropdown{
+    border-bottom: 1px solid black;
+
+}
+.dropdown1{
+    border-bottom: none
 }

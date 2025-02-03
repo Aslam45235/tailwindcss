@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 
 function Home() {
   return (
     <>
       <div className="lg:full md:w-full w-full md:flex md:h-[982px] ">
         <div className="nav w-full md:w-full lg:w-full">
-          <Navbar />
+          <Navbar Color="white"/>
         </div>
 
         <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16">
@@ -96,7 +98,7 @@ function Home() {
 
 
           <div className="md:w=[50%] w-full md:mt-28 mt-8 2xl:mt-[300px]">
-          <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
+            <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
             <p className="text-[18px] text-400 leading-[25px] mt-10">
               Our extensive experience and deep expertise in the energy sector
               have positioned us as leaders in the industry. With two decades of
@@ -108,13 +110,27 @@ function Home() {
               of our clients.
             </p>
             <div className="mt-10 text-[18px] text-400 leading-[25px]">
-                <a href="">Learn more..</a>
+              <a href="">Learn more..</a>
             </div>
           </div>
-
-
-
         </div>
+      </div>
+
+
+      <div className="md:pl-10  md:w=[100%] w-full p-4 ">
+        <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
+          <h1 className="text-[40px] text-400 leading-[48px]">Get in touch with us</h1>
+          <p className="text-[18px] text-400 leading-[25px] mt-10">
+            If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals.
+          </p>
+          <div className="mt-10 text-[18px] text-400 leading-[25px]">
+            <a href="">Contact us..</a>
+          </div>
+        </div>
+
+      </div>
+      <div className="md:mt-[50px] mt-[50px]">
+      <Footer/>
       </div>
     </>
   );
