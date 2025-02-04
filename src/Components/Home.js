@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className="lg:full md:w-full w-full md:flex md:h-[982px] ">
         <div className="nav w-full md:w-full lg:w-full">
-          <Navbar Color="white" />
+          <Navbar Color="white" menuColor="#A6A6AB"/>
         </div>
 
         <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16">

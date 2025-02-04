@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import "../App.css";
 import { Link } from 'react-router-dom';
 
-function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , buttonOpacity=1}) {
+function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , buttonOpacity=1, menuColor}) {
   // State to track whether the mobile menu is open or closed
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,8 +36,8 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
       <div className='md:w-full flex h-[109px] md:px-4 lg:px-16 w-full items-center justify-between px-5 pt-[16px]' style={{ backgroundColor }}>
       <Link to="/"><div style={{ color: Color }} className='flex justify-center items-center'>
           <img className='mr-4' src='./images/logo.svg' alt='' />
-          <p className='P-tag'>
-            <span className='block span'>Oaklan</span>
+          <p className='P-tag' style={{ color: menuColor }}>
+            <span className='block span'style={{ color: Color }}>Oaklan</span>
             Energy Consulting
           </p>
         </div></Link>
