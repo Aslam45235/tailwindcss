@@ -126,7 +126,7 @@ function Portfolio() {
     <>
       <div className="w-full h-[590px]">
         <div className="absolute w-full md:w-full lg:w-full">
-          <Navbar Color="white" buttonOpacity={0.5} />
+          <Navbar Color="white" buttonOpacity={0.8} />
         </div>
         <div
           className="lg:full bg-no-repeat bg-cover md:bg-cover md:w-full w-full md:h-[763px] h-[763px] lg:px-16 px-4"
@@ -145,7 +145,7 @@ function Portfolio() {
       </div>
 
       <div className="w-full px-2 lg:px-[50px]">
-        <div className="w-[400px] md:w-[700px] mt-[300px] px-4">
+        <div className="min-w-[20%] md:w-[700px] mt-[300px] px-4">
           <h1 className="text-[40px] text-400 leading-[48px]">
             Proudly helping businesses
           </h1>
@@ -201,7 +201,7 @@ function Portfolio() {
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-colors
                                         ${
                                           activeFilter === label
-                                            ? "bg-purple-600 text-white"
+                                            ? "bg-[#A6A6AB] text-white"
                                             : "bg-white text-gray-700 hover:bg-gray-100"
                                         }`}
                 >
@@ -272,14 +272,9 @@ function Portfolio() {
             collaborate, and provide you with tailored solutions that align with
             your specific needs and goals.
           </p>
-          <div className="mt-10 text-[18px] text-400 leading-[25px]">
-            <Link
-              to="/contact"
-              className="border-b-[2px] border-[#F4F4F4] pb-2 px-[1px]"
-            >
-              Contact us
-            </Link>
-          </div>
+          <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
+                    <Link to="/contact"> <img src="./images/Linkbt.svg" alt="" /> </Link>
+            </div>
         </div>
       </div>
 

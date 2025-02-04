@@ -3,13 +3,12 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
-
 function Home() {
   return (
     <>
       <div className="lg:full md:w-full w-full md:flex md:h-[982px] ">
         <div className="nav w-full md:w-full lg:w-full">
-          <Navbar Color="white"/>
+          <Navbar Color="white" />
         </div>
 
         <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16">
@@ -86,19 +85,19 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[1206px] md:h-[700px] 2xl:h-[800px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
+      <div className="w-full h-[1206px] md:h-[770px] lg:h-[470px] 2xl:h-[900px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
 
 
-        <div className=" relative md:bottom-16 md:w-[86%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
+        <div className=" relative md:bottom-16 md:w-[90%] xl:w-[70%] lg:w-[95%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
 
 
-          <div className="md:w-[100%] lg:w-[50%] w-full 2xl:h-[590px] ">
-            <img className="md:w-full " src="./images/apar.svg" alt="" />
+          <div className="w-full lg:w-[50%] lg:h-auto">
+            <img className="w-full h-auto object-cover" src="./images/apar.svg" alt="Image" />
           </div>
 
 
 
-          <div className="md:w=[50%] w-full md:mt-28 mt-8 2xl:mt-[300px]">
+          <div className="md:w=[50%] w-full md:mt-28 2xl:mt-[300px]">
             <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
             <p className="text-[18px] text-400 leading-[25px] mt-10">
               Our extensive experience and deep expertise in the energy sector
@@ -124,14 +123,14 @@ function Home() {
           <p className="text-[18px] text-400 leading-[25px] mt-10">
             If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals.
           </p>
-          <div className="mt-10 text-[18px] text-400 leading-[25px]">
-          <Link to="/contact" className="border-b-[2px] border-[#F4F4F4] pb-2 px-[1px]" >Contact us</Link>
+          <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
+            <Link to="/build"> <img src="./images/Linkbt.svg" alt="" /> </Link>
           </div>
         </div>
       </div>
 
       <div className="md:mt-[50px] mt-[50px]">
-      <Footer/>
+        <Footer />
       </div>
     </>
   );

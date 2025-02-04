@@ -7,7 +7,7 @@ function About() {
     <>
       <div className="w-full h-[590px]">
         <div className="absolute w-full md:w-full lg:w-full">
-          <Navbar color="black" />
+          <Navbar buttontextcolor="white" buttonColor="black"/>
         </div>
         <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[763px] h-[763px] lg:px-16 px-4">
           <div className="pt-[550px] md:h-[auto]">
@@ -45,7 +45,7 @@ function About() {
         </div>
 
         <div>
-          <div className="w-[408px] md:w-auto lg:w-[700px] mt-[150px] px-4">
+          <div className="min-w-[20%] md:w-auto lg:w-[700px] mt-[70px] lg:mt-[100px] px-4">
             <p className="text-[18px] text-400 leading-[25px] mt-10 ">
               Innovation has been at the heart of our journey right from the
               beginning. At Oakland C.E., we believe that staying at the
@@ -62,7 +62,7 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center lg:h-auto h-[180px] md:h-[250px] md:px-[100px] xl:px-[100px] xl:pt-[100px] mt-[15px]  lg:mt-[100px] px-5">
+      <div className="w-full flex justify-center items-center xl:h-auto h-[180px] md:min-h-[20%px] md:px-[50px] xl:px-[100px] xl:pt-[100px] mt-[15px]  lg:mt-[100px] px-5">
         <div>
           <img src="./images/tree.svg" alt="" />
         </div>

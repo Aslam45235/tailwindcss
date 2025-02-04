@@ -1,106 +1,124 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import React from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Services() {
+  // State to track which dropdown is open
+  const [openDropdown, setOpenDropdown] = useState(null);
 
-    // State to track which dropdown is open
-    const [openDropdown, setOpenDropdown] = useState(null);
+  // Function to toggle dropdowns
+  const toggleDropdown = (menu) => {
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
 
-    // Function to toggle dropdowns
-    const toggleDropdown = (menu) => {
-        setOpenDropdown(openDropdown === menu ? null : menu);
-    };
-    return (
-        <>
-            <div className='w-full h-[700px] text-white'>
+  const services = [
+    { title: "Illumination", id: "illumination" },
+    { title: "Sustainable Energy", id: "energy" },
+    { title: "Electric Mobility", id: "mobility" },
+    { title: "Consulting", id: "consulting" },
+  ];
 
-                <div className='absolute w-full md:w-full lg:w-full'>
-                    <Navbar color="white" />
-                </div>
-                <div className='lg:full bg-[#000000] md:w-full w-full h-[700px] lg:h-[700px] xl:h-[700px] lg:px-16 px-4'>
-
-                    <div className='pt-[450px]'>
-                        <h1 className="text-[40px] text-400 leading-[48px]">Services</h1>
-                        <div className='md:w-[535px]'>
-                            <p className="text-[18px] text-400 leading-[25px] mt-10">
-                            Discover our comprehensive range of services tailored to meet your energy efficiency, LED lighting, photovoltaic energy, and much more.                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div className='main w-full h-[1200px] xl:h-[1430px] md:mt-[200px] px-4 md:px-20 mt-20'>
-
-            <div className="w-full">
-            {[
-                { title: "Illumination", id: "illumination" },
-                { title: "Sustainable Energy", id: "energy" },
-                { title: "Electric Mobility", id: "mobility" },
-                { title: "Consulting", id: "consulting" }
-            ].map((item) => (
-                <div key={item.id} className="border-b border-gray-300">
-                    {/* Dropdown Button */}
-                    <div className="flex justify-between items-center py-4 cursor-pointer gap-x-[200px]" onClick={() => toggleDropdown(item.id)}>
-                        <h1 className="md:text-[48px] md:leading-[58.08px] text-[20px] font-semibold">{item.title}</h1>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 22 22"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className={`size-8 transition-transform duration-300 ${openDropdown === item.id ? "rotate-180" : ""}`}
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                        </svg>
-                    </div>
-
-                    {/* Dropdown Content */}
-                    {openDropdown === item.id && (
-                        <div className="p-4 bg-gray-100 rounded-md">
-                            <p className="text-gray-700">This is more information about {item.title}.</p>
-                        </div>
-                    )}
-                </div>
-            ))}
+  return (
+    <>
+      <div className="w-full h-[700px] text-white">
+        <div className="absolute w-full md:w-full lg:w-full">
+          <Navbar color="white" />
         </div>
-                <div className='w-full flex mt-[100px] md:gap-3 px-4'>
-                    <div className='md:w-[40%] flex justify-end items-end'>
-                            <div className=''>
-                                  <p className='text-[14px] leading-[20px] text-400 text-[#A6A6AB]'>Sustainable energy consulting <br />
-                                  Portugal. 2023</p>  
-                            </div>
-                    </div>
-                    <div>
-                        <img className='w-full' src="./images/power.svg" alt="" />
-                    </div>
-                </div>
-
-
-                <div>
-                    <div className='w-[400px] md:w-[700px] mt-[150px] px-4'>
-                        <h1 className="text-[40px] text-400 leading-[48px]">Proudly helping businesses</h1>
-                        <p className="text-[18px] text-400 leading-[25px] mt-10">
-                            Explore our portfolio of remarkable projects where innovation and sustainability converge. Discover how we've transformed energy landscapes and elevated standards in the industry.                        </p>
-                        <div className="mt-10 text-[18px] text-400 leading-[25px]">
-                            <Link to="/legalpage" className="border-b-[2px] border-[#F4F4F4] pb-2 px-[1px]" >View our Portfolio</Link>
-                        </div>
-                    </div>
-                </div>
-
+        <div className="lg:full bg-[#000000] md:w-full w-full h-auto lg:px-16 px-4">
+          <div className="pt-[550px]">
+            <h1 className="text-[40px] text-400 leading-[48px]">Services</h1>
+            <div className="md:w-[535px]">
+              <p className="text-[18px] text-400 leading-[25px] mt-10 mb-16">
+                Discover our comprehensive range of services tailored to meet your energy efficiency, LED lighting, photovoltaic energy, and much more.
+              </p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div className=' w-full mt-20'>
-                <Footer />
+      <div className="main w-full min-h-[100%] xl:h-[1430px] md:mt-[200px] px-4 md:px-20 mt-20">
+        <div className="w-full">
+          {services.map((item, index) => (
+            <div
+              key={item.id}
+              className={`${
+                index === services.length - 1 ? '' : 'border-b border-gray-300'
+              }`}
+            >
+              {/* Dropdown Button */}
+              <div
+                className="flex justify-between items-center py-4 cursor-pointer gap-x-[200px]"
+                onClick={() => toggleDropdown(item.id)}
+              >
+                <h1 className="md:text-[48px] md:leading-[58.08px] text-[20px] font-semibold">
+                  {item.title}
+                </h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 22 22"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className={`size-8 transition-transform duration-300 ${
+                    openDropdown === item.id ? 'rotate-180' : ''
+                  }`}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                  />
+                </svg>
+              </div>
+
+              {/* Dropdown Content */}
+              {openDropdown === item.id && (
+                <div className="p-4 bg-gray-100 rounded-md">
+                  <p className="text-gray-700">This is more information about {item.title}.</p>
+                </div>
+              )}
             </div>
+          ))}
+        </div>
 
+        <div className="w-full flex mt-[100px] md:gap-3 px-4">
+          <div className="md:w-[40%] flex justify-end items-end">
+            <div className="">
+              <p className="text-[14px] leading-[20px] text-400 text-[#A6A6AB]">
+                Sustainable energy consulting
+                <br />
+                Portugal. 2023
+              </p>
+            </div>
+          </div>
+          <div>
+            <img className="w-full" src="./images/power.svg" alt="" />
+          </div>
+        </div>
 
-        </>
-    )
+        <div>
+          <div className="min-w-[20%] md:w-[700px] mt-[40px] md:mt-[150px] px-4">
+            <h1 className="text-[40px] text-400 leading-[48px]">Proudly helping businesses</h1>
+            <p className="text-[18px] text-400 leading-[25px] mt-10">
+              Explore our portfolio of remarkable projects where innovation and sustainability converge. Discover how we've transformed energy landscapes and elevated standards in the industry.
+            </p>
+            <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
+              <Link to="/build">
+                {' '}
+                <img src="./images/LinkB.svg" alt="" />{' '}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" w-full mt-[30px] md:-[100px]">
+        <Footer />
+      </div>
+    </>
+  );
 }
 
-export default Services
+export default Services;

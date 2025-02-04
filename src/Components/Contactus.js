@@ -46,7 +46,7 @@ function Contact() {
                 <div className='absolute w-full md:w-full lg:w-full'>
                     <Navbar color="black" buttonColor="black" buttontextcolor="white"/>
                 </div>
-                <div className='lg:full bg-[#F4F4F4] md:w-full w-full md:h-[982px] h-[813px] lg:px-16 px-4'>
+                <div className='lg:full bg-[#F4F4F4] md:w-full w-full md:h-[982px] h-[840px] lg:px-16 px-4'>
 
                     <div className='pt-[550px] md:h-auto'>
                         <h1 className="text-[40px] text-400 leading-[48px]">Contact us</h1>

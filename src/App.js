@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Build from "./Components/Build";
 function App() {
 
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/legalpage",
       element: <Legalpage />
+    },
+    {
+      path: "/build",
+      element: <Build />
     },
   ])
   return (
