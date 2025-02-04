@@ -53,7 +53,7 @@ function Home() {
             </p>
           </div>
           <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
-            <div className="md:flex justify-between flex xl:w-full w-[1300px] lg:gap-10 gap-[20px] md:overflow-hidden ">
+            <div className="md:flex justify-between flex xl:w-full w-[1300px] lg:gap-6 gap-[20px] md:overflow-hidden ">
               <div className="mt-[40px] w-[313px] h-[375px] ">
                 <img src="./images/frame1.svg" alt="" />
               </div>
@@ -73,7 +73,7 @@ function Home() {
 
       <div className="w-ful md:h-[250px] h-[300px] flex ">
         <div className="w-full md:w-[40%] hidden md:block"></div>
-        <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 ">
+        <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 mt-10">
           <p className="pr-14 text-[18px]">
             Leading the market for two decades, we have been experts in energy
             efficiency. With an unwavering commitment to innovation, we offer
@@ -85,19 +85,19 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[1206px] md:h-[770px] lg:h-[470px] 2xl:h-[650px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
+      <div className="w-full h-auto bg-[#F4F4F4] xl:px-[100px]  px-4">
 
 
-        <div className=" relative md:bottom-16 md:w-[90%] xl:w-[70%] lg:w-[95%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
+        <div className="md:flex lg:gap-[100px] mt-[100px] gap-6 md:px-10 xl:pl-[80px] mt-[50px]   ">
 
 
-          <div className="w-full lg:w-[50%] lg:h-auto">
-            <img className="w-full h-auto object-cover" src="./images/apar.svg" alt="Image" />
+          <div className=" w-full md:w-[50%] md:relative md:bottom-20">
+            <img className="w-full" src="./images/apar.svg" alt="Image" />
           </div>
 
 
 
-          <div className="md:w=[50%] w-full md:mt-28 2xl:mt-[300px]">
+          <div className="md:w=[50%] w-full flex justify-center flex-col">
             <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
             <p className="text-[18px] text-400 leading-[25px] mt-10">
               Our extensive experience and deep expertise in the energy sector
