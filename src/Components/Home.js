@@ -85,7 +85,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[1206px] md:h-[770px] lg:h-[470px] 2xl:h-[900px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
+      <div className="w-full h-[1206px] md:h-[770px] lg:h-[470px] 2xl:h-[650px]  bg-[#F4F4F4] flex justify-center mt-[100px]  ">
 
 
         <div className=" relative md:bottom-16 md:w-[90%] xl:w-[70%] lg:w-[95%] 2xl:h-[590px] flex md:gap-20 flex-col md:flex-row px-4 ">
