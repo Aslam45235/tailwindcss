@@ -5,11 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         title: ["Inter Tight", "serif"],
+      },
+      screens: {
+        xs: "320px", // Custom breakpoint for 320px screens
+        "sm-md": "425px", // Custom breakpoint for 425px+
       },
     },
   },
   plugins: [],
-}
+};
+
 

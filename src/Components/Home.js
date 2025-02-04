@@ -71,9 +71,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-ful md:h-[250px] h-[300px] flex ">
+      <div className="w-full xs:h-auto md:h-auto h-[300px] flex ">
         <div className="w-full md:w-[40%] hidden md:block"></div>
-        <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 mt-10">
+        <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 xs:mt-[50px] md:mt-1">
           <p className="pr-14 text-[18px]">
             Leading the market for two decades, we have been experts in energy
             efficiency. With an unwavering commitment to innovation, we offer
@@ -88,7 +88,7 @@ function Home() {
       <div className="w-full h-auto bg-[#F4F4F4] xl:px-[100px]  px-4">
 
 
-        <div className="md:flex lg:gap-[100px] mt-[100px] gap-6 md:px-10 xl:pl-[80px] mt-[50px]   ">
+        <div className="md:flex lg:gap-[100px] xs:mt-[50px] sm-md:mt-[50px] gap-6 md:px-10 xl:pl-[80px]  md:mt-[150px]  ">
 
 
           <div className=" w-full md:w-[50%] md:relative md:bottom-20">
