@@ -40,7 +40,7 @@ function Home() {
 
 
       <div className="w-full h-[680px] md:h-[710px] flex md:justify-center md:items-center mt-4">
-        <div className=" w-[90%] h-[553px] 2xl:pl-[200px] pl-4">
+        <div className=" w-[90%] h-[553px] 2xl:pl-[100px] pl-4">
           <div>
             <h1 className="text-[40px] leading-[48px] text-400 ">
               Areas of Expertise
@@ -53,7 +53,7 @@ function Home() {
             </p>
           </div>
           <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
-            <div className="md:flex flex w-[1300px] gap-[20px] md:overflow-hidden ">
+            <div className="md:flex justify-between flex xl:w-full w-[1300px] lg:gap-10 gap-[20px] md:overflow-hidden ">
               <div className="mt-[40px] w-[313px] h-[375px] ">
                 <img src="./images/frame1.svg" alt="" />
               </div>
