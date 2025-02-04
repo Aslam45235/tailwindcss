@@ -26,7 +26,7 @@ function Services() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="white" />
         </div>
-        <div className="lg:full bg-[#000000] md:w-full w-full h-auto lg:px-16 px-4">
+        <div className="lg:full bg-[#000000] md:w-full  h-[800px] lg:px-16 px-4">
           <div className="pt-[550px]">
             <h1 className="text-[40px] text-400 leading-[48px]">Services</h1>
             <div className="md:w-[535px]">
@@ -38,7 +38,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="main w-full min-h-[100%] xl:h-[1430px] md:mt-[200px] px-4 md:px-20 mt-20">
+      <div className="main w-full min-h-[100%] xl:h-[1430px] md:mt-[200px] px-4 pt-5 md:px-20 mt-20">
         <div className="w-full">
           {services.map((item, index) => (
             <div
@@ -49,7 +49,7 @@ function Services() {
             >
               {/* Dropdown Button */}
               <div
-                className="flex justify-between items-center py-4 cursor-pointer gap-x-[200px]"
+                className="flex justify-between items-center py-4 cursor-pointer md:gap-x-[200px]"
                 onClick={() => toggleDropdown(item.id)}
               >
                 <h1 className="md:text-[48px] md:leading-[58.08px] text-[20px] font-semibold">
