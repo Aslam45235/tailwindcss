@@ -18,7 +18,7 @@ function Build() {
                     <div className='pt-[500px] w-full md:h-auto'>
                         <h3 className='text-[#A6A6AB] text-[18px]'>PORTFOLIO</h3>
                         <h1 className="text-[40px] text-400 leading-[48px] mt-6">Delloite Building, London</h1>
-                        <div className='mt-10'>
+                        <div className='mt-10 w-full'>
                             <img className='' src="./images/build.svg" alt="" />
                         </div>
 

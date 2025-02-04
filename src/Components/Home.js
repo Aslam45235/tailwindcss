@@ -17,7 +17,7 @@ function Home() {
               Redefining <br />
               Energy
             </h1>
-            <p className="pt-[48px] sm:pr-12 text-white pr-8">
+            <p className="pt-[48px] w-[100%] sm:pr-12 text-white pr-8">
               As market leaders for 20 years, we are experts in energy
               efficiency, providing tailored, concrete solutions to meet your
               needs.
