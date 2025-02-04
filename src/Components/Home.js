@@ -11,7 +11,7 @@ function Home() {
           <Navbar Color="white" menuColor="#A6A6AB"/>
         </div>
 
-        <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16">
+        <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16 xl:px-[100px]">
           <div className="px-4 pt-[380px]  md:pt-[550px]">
             <h1 className=" leading-[77px] text-white text-[64px]  text-400">
               Redefining <br />
@@ -117,7 +117,7 @@ function Home() {
       </div>
 
 
-      <div className="md:pl-10  md:w=[100%] w-full p-4 ">
+      <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[100px]  ">
         <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
           <h1 className="text-[40px] text-400 leading-[48px]">Get in touch with us</h1>
           <p className="text-[18px] text-400 leading-[25px] mt-10">

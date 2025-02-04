@@ -129,7 +129,7 @@ function Portfolio() {
           <Navbar Color="white" buttonOpacity={0.8} />
         </div>
         <div
-          className="lg:full bg-no-repeat bg-cover md:bg-cover md:w-full w-full md:h-[763px] h-[763px] lg:px-16 px-4"
+          className="lg:full bg-no-repeat bg-cover md:bg-cover md:w-full w-full md:h-[763px] h-[763px] lg:px-[100px]  px-4"
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="pt-[550px] md:h-[auto] text-[white]">

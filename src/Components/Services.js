@@ -26,7 +26,7 @@ function Services() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="white" />
         </div>
-        <div className="lg:full bg-[#000000] md:w-full  h-[800px] lg:px-16 px-4">
+        <div className="lg:full bg-[#000000] md:w-full  h-[800px] lg:px-[100px]  px-4">
           <div className="pt-[550px]">
             <h1 className="text-[40px] text-400 leading-[48px]">Services</h1>
             <div className="md:w-[535px]">
@@ -38,7 +38,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="main w-full min-h-[100%] xl:h-[1430px] md:mt-[200px] px-4 pt-5 md:px-20 mt-20">
+      <div className="main w-full min-h-[100%] xl:h-[1430px] md:mt-[200px] px-4 pt-5 md:px-20 lg:px-[100px] mt-20">
         <div className="w-full">
           {services.map((item, index) => (
             <div

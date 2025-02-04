@@ -9,7 +9,7 @@ function About() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar buttontextcolor="white" buttonColor="black"/>
         </div>
-        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[763px] h-[763px] lg:px-16 px-4">
+        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[763px] h-[763px] lg:px-[100px]  px-4">
           <div className="pt-[550px] md:h-[auto]">
             <h1 className="text-[40px] text-400 leading-[48px]">About us</h1>
             <div className="md:w-[535px]">
@@ -22,7 +22,7 @@ function About() {
         </div>
       </div>
 
-      <div className="main w-full h-[1029px] xl:h-[1029px] mt-[250px] md:px-20 px-4">
+      <div className="main w-full h-[1029px] xl:h-[1029px] mt-[250px] md:px-20 px-4 lg:px-[100px] ">
         <div>
           <h1 className="text-[40px] text-400 leading-[48px]">
             Innovation. <br />

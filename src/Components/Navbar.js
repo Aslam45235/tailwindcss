@@ -33,7 +33,7 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
 
   return (
     <>
-      <div className='md:w-full flex h-[109px] md:px-4 lg:px-16 w-full items-center justify-between px-5 pt-[16px]' style={{ backgroundColor }}>
+      <div className='md:w-full flex h-[109px] md:px-[20px] lg:px-[100px] w-full items-center justify-between px-5 pt-[16px]' style={{ backgroundColor }}>
       <Link to="/"><div style={{ color: Color }} className='flex justify-center items-center'>
           <img className='mr-4' src='./images/logo.svg' alt='' />
           <p className='P-tag' style={{ color: menuColor }}>
