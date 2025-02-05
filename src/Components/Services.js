@@ -108,7 +108,7 @@ function Services() {
                 </div>
             </div >
 
-            <div className=" w-full mt-[30px] md:-[100px]">
+            <div className=" w-full mt-[30px] md:mt-[100px]">
                 <Footer />
             </div>
         </>
