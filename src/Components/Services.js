@@ -55,7 +55,7 @@ function Services() {
                                     {item.title}
                                 </h1>
                                 <svg width="31" height="36" viewBox="0 0 31 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-1.61425e-06 19.9297L2.57812 17.3047L13.4062 28.0859L13.4062 0.101561L17.1562 0.101561L17.1562 28.0859L27.9375 17.3047L30.5625 19.9297L15.2812 35.1641L-1.61425e-06 19.9297Z" fill="#A6A6AB" className={`size-8 transition-transform duration-300 ${openDropdown === item.id ? 'rotate-180 bg-[#A6A6AB]' : ''
+                                    <path d="M-1.61425e-06 19.9297L2.57812 17.3047L13.4062 28.0859L13.4062 0.101561L17.1562 0.101561L17.1562 28.0859L27.9375 17.3047L30.5625 19.9297L15.2812 35.1641L-1.61425e-06 19.9297Z" fill="#A6A6AB" className={`size-8 transition-transform duration-300 ${openDropdown === item.id ? 'rotate-180' : ''
                                         }`} />
 
 
@@ -77,7 +77,7 @@ function Services() {
                     ))}
                 </div>
 
-                <div className="w-full flex mt-[100px] md:gap-3 px-4">
+                <div className="w-full flex justify-end mt-[100px] md:gap-3 px-4">
                     <div className="md:w-[40%] flex justify-end items-end">
                         <div className="">
                             <p className="text-[14px] leading-[20px] text-400 text-[#A6A6AB]">

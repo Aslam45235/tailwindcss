@@ -30,7 +30,7 @@ function About() {
           </h1>
         </div>
 
-        <div className="w-full flex justify-center mt-[100px] md:gap-3 px-4">
+        <div className="w-full flex justify-end mt-[100px] md:gap-3 px-4">
           <div className="md:w-[40%] flex justify-end items-end">
             <div className="">
               <p className="text-[14px] leading-[20px] text-400 text-[#A6A6AB]">
@@ -62,7 +62,7 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center xl:h-auto h-[180px] md:min-h-[20%px] md:px-[50px] xl:px-[100px] xl:pt-[100px] mt-[15px]  lg:mt-[100px] px-5">
+      <div className="w-full flex justify-end items-end xl:h-auto h-[180px] md:min-h-[20%px] md:px-[50px] xl:px-[100px] xl:pt-[100px] mt-[15px]  lg:mt-[100px] px-5">
         <div>
           <img src="./images/tree.svg" alt="" />
         </div>

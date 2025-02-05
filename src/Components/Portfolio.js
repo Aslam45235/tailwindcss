@@ -145,7 +145,7 @@ function Portfolio() {
         </div>
       </div>
 
-      <div className="w-full px-2 lg:px-[50px]">
+      <div className="w-full px-2 lg:px-[100px]">
         <div className="min-w-[20%] md:w-[700px] mt-[300px] px-4">
           <h1 className="text-[40px] text-400 leading-[48px]">
             Proudly helping businesses
