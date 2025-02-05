@@ -261,7 +261,7 @@ function Portfolio() {
         </div>
       </div>
 
-      <div className="md:pl-10  md:w=[100%] w-full p-4 ">
+      <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[100px]">
         <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
           <h1 className="text-[40px] text-400 leading-[48px]">
             Get in touch with us
