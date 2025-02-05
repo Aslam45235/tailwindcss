@@ -22,9 +22,11 @@ function Home() {
               efficiency, providing tailored, concrete solutions to meet your
               needs.
             </p>
+            <Link to="/portfolio">
             <button className="px-[40px] py-[16px] mt-[48px] bg-white rounded-[40px]">
               View our Portfolio
             </button>
+            </Link>
           </div>
         </div>
         <div className="lg:full md:w-[50%] md:h-[982px]">
@@ -104,7 +106,7 @@ function Home() {
 
 
           <div className=" w-full md:w-[50%] md:relative md:bottom-20">
-            <img className="w-full" src="./images/apar.svg" alt="Image" />
+            <img className="w-full max-w-[500px] max-h-[600px]" src="./images/apar.svg" alt="Image" />
           </div>
 
 

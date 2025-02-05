@@ -66,13 +66,13 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
           <div
             ref={menuRef}
             style={{ color: Color }}
-            className="flex flex-col items-center bg-[#A6A6AB] rounded-lg shadow-lg p-8 w-3/4 md:w-1/2"
+            className="flex flex-col items-center bg-[#dcdceb] rounded-lg shadow-lg p-8 w-3/4 md:w-1/2"
           >
-            <Link className="navbar-a text-[16px] p-4 hover:text-blue-600 transition-colors" to="/about">About us</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-blue-600 transition-colors" to="/services">Services</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-blue-600 transition-colors" to="/portfolio">Portfolio</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-blue-600 transition-colors" to="/contact">
-              <button className="btn bg-blue-600 text-white px-7 py-4 rounded-lg mt-6 hover:bg-blue-700 transition-all">
+            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/about">About us</Link>
+            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/services">Services</Link>
+            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/portfolio">Portfolio</Link>
+            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/contact">
+              <button className="btn hover:text-[#A6A6AB] text-white px-7 py-4 rounded-lg mt-6 hover:hover:text-[#A6A6AB] transition-all">
                 Contact us
               </button>
             </Link>
