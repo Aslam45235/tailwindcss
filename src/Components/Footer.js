@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><Link to="/build" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
             </ul>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className=" mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-          <Link to="/build"> <p>&copy; {new Date().getFullYear()} Oakland -Energy Consulting ©</p> </Link>
+           <p>&copy; {new Date().getFullYear()} Oakland -Energy Consulting ©</p> 
             <div className="mt-4 md:mt-0">
               <a href="#" className="text-sm hover:text-white transition-colors">
               Design by Ferréh
