@@ -53,7 +53,7 @@ function Home() {
             </p>
           </div>
           <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
-            <div className="md:flex justify-between flex xl:w-full w-[1300px] lg:gap-6 gap-[20px] md:overflow-hidden ">
+            <div className="md:flex justify-evenly flex xl:w-full w-[1300px] lg:gap-1 gap-[20px] md:overflow-hidden ">
               <div className="mt-[40px] w-[313px] h-[375px] ">
                 <img src="./images/frame1.svg" alt="" />
               </div>
