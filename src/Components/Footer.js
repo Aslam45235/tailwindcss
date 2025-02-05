@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Linkedin, Instagram, Twitter } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-[#212529] text-gray-300">
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className=" mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} Oakland -Energy Consulting ©</p>
+          <Link to="/build"> <p>&copy; {new Date().getFullYear()} Oakland -Energy Consulting ©</p> </Link>
             <div className="mt-4 md:mt-0">
               <a href="#" className="text-sm hover:text-white transition-colors">
               Design by Ferréh
