@@ -9,7 +9,7 @@ function Legalpage() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="black" />
         </div>
-        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[635px] h-[640px] lg:px-16 px-4">
+        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[635px] h-[640px] lg:px-[100px] px-4">
           <div className="pt-[450px]">
             <h1 className="text-[40px] text-400 leading-[48px]">
               Privacy and Cookies Policy
@@ -25,7 +25,7 @@ function Legalpage() {
         </div>
       </div>
 
-      <main className="w-full lg:pl-16 mt-[100px] px-4">
+      <main className="w-full mt-[100px] px-4 lg:px-[100px]">
         <div className="space-y-8">
           {/* Information Usage Section */}
           <div className="w-[80%]">

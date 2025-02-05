@@ -28,7 +28,7 @@ function Build() {
             </div>
 
 
-            <div className="p-5 px-3 flex w-full md:px-[50px]">
+            <div className="p-5 px-3 flex w-full md:px-[100px]">
                 <div className='w-[30%] hidden md:block'>
 
                 </div>
@@ -44,7 +44,7 @@ function Build() {
             </div>
 
 
-            <div className="p-5 px-3 flex w-full md:px-[50px]">
+            <div className="p-5 px-3 flex w-full md:px-[100px]">
                 <div className='md:w-[70%]  w-[100%]'>
                     <img src="./images/buildbg.svg" alt="" />
                 </div>
@@ -55,7 +55,7 @@ function Build() {
 
 
 
-            <div className="p-5 px-3 flex w-full md:px-[50px]">
+            <div className="p-5 px-3 flex w-full md:px-[100px]">
                 <div className='w-[30%] md:w-[30%] hidden md:block'>
 
                 </div>
@@ -64,7 +64,7 @@ function Build() {
                 </div>
             </div>
 
-            <div className="md:pl-10  md:w=[100%] w-full p-4 ">
+            <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[100px]">
                 <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
                     <h1 className="text-[40px] text-400 leading-[48px]">
                         Get in touch with us
