@@ -130,7 +130,8 @@ function Portfolio() {
         </div>
         <div
           className="lg:full bg-no-repeat bg-cover md:bg-cover md:w-full w-full md:h-[763px] h-[763px] lg:px-[100px]  px-4"
-          style={{ backgroundImage: `url(${imageUrl})` }}
+          style={{backgroundImage : `url(${imageUrl})` ,
+          backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
         >
           <div className="pt-[550px] md:h-[auto] text-[white]">
             <h1 className="text-[40px] text-400 leading-[48px]">Portfolio</h1>
