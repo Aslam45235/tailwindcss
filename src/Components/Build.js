@@ -56,7 +56,7 @@ function Build() {
 
 
             <div className="p-5 px-3 flex w-full md:px-[100px]">
-                <div className='w-[30%] md:w-[30%] hidden md:block'>
+                <div className='w-[30%] md:w-[100%] hidden md:block'>
 
                 </div>
                 <div className="w-[100%] mt-[30px] md:w-[70%]  ">
