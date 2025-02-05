@@ -124,7 +124,7 @@ function Home() {
             If you're ready to explore how our expertise in energy efficiency, LED lighting, photovoltaic energy, and electric mobility can benefit your projects, don't hesitate to reach out. We're here to listen, collaborate, and provide you with tailored solutions that align with your specific needs and goals.
           </p>
           <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
-            <Link to="/build"> <img src="./images/Linkbt.svg" alt="" /> </Link>
+            <Link to="/contact"> <img src="./images/Linkbt.svg" alt="" /> </Link>
           </div>
         </div>
       </div>

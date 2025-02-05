@@ -274,7 +274,7 @@ function Portfolio() {
             your specific needs and goals.
           </p>
           <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
-                    <Link to="/legalpage"> <img src="./images/Linkbt.svg" alt="" /> </Link>
+                    <Link to="/portfolio"> <img src="./images/Linkbt.svg" alt="" /> </Link>
             </div>
         </div>
       </div>
