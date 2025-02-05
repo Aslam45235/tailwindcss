@@ -54,17 +54,29 @@ function Home() {
           </div>
           <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
             <div className="md:flex justify-between flex xl:w-full w-[1300px] lg:gap-1 gap-[20px] md:overflow-hidden ">
-              <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame1.svg" alt="" />
+              <div className="mt-[40px] max-w-[313px] max-h-[375px] ">
+                <img src="./images/frame1 (1).svg" alt="" />
+                <div className="relative bottom-[3.25rem] left-[32px]">
+                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Energy Efficiency</p>
+                </div>
               </div>
               <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame2.svg" alt="" />
+                <img src="./images/frame2 (1).svg" alt="" />
+                <div className="relative bottom-[3.25rem] left-[32px]">
+                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">LED Lighting</p>
+                </div>
               </div>
               <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame3.svg" alt="" />
+                <img src="./images/frame3 (1).svg" alt="" />
+                <div className="relative bottom-[3.25rem] left-[32px]">
+                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Photovoltaic Energy</p>
+                </div>
               </div>
               <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame4.svg" alt="" />
+                <img src="./images/frame4 (1).svg" alt="" />
+                <div className="relative bottom-[3.25rem] left-[32px]">
+                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Electric Mobility</p>
+                </div>
               </div>
             </div>
           </div>
