@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div className="lg:full md:w-full w-full md:flex md:h-[982px] ">
-        <div className="nav w-full md:w-full lg:w-full">
+        <div className="nav w-full md:w-full flex lg:w-full ">
           <Navbar Color="white" menuColor="#A6A6AB"/>
         </div>
 
@@ -41,51 +41,57 @@ function Home() {
 
 
 
-      <div className="w-full h-[680px] md:h-[710px] flex md:justify-center md:items-center mt-4">
-        <div className=" w-[90%] h-[553px] 2xl:pl-[100px] pl-4">
-          <div>
-            <h1 className="text-[40px] leading-[48px] text-400 ">
-              Areas of Expertise
-            </h1>
-            <p className="mt-[40px] text-[18px] leading-[25px]">
-              Whether for small or large-scale projects, we are committed to
-              delivering cutting-edge results,
-              <br className="hidden lg:block" /> contributing to a more
-              sustainable and innovative energy future.
-            </p>
+      <div className="w-full h-auto flex md:justify-center md:items-center mt-[4rem]">
+  <div className="w-[90%] pl-4">
+    <div>
+      <h1 className="text-[40px] leading-[48px] text-400">
+        Areas of Expertise
+      </h1>
+      <p className="mt-[40px] text-[18px] leading-[25px]">
+        Whether for small or large-scale projects, we are committed to
+        delivering cutting-edge results,
+        <br className="hidden lg:block" /> contributing to a more
+        sustainable and innovative energy future.
+      </p>
+    </div>
+    <div className="overflow-x-auto w-full xoverflow-hidden md:w-full">
+      <div className="flex gap-5 min-w-max">
+        <div className="mt-[40px] w-[400px] h-[500px]">
+          <img className="w-full h-full object-cover rounded-[20px]" src="./images/frame1 (1).svg" alt="" />
+          <div className="relative bottom-[3.25rem] left-[32px]">
+            <p className="text-[18px] text-[white] font-[400] leading-[25px]">Energy Efficiency</p>
           </div>
-          <div className=" overflow-scroll w-full xl:overflow-hidden md:w-full ">
-            <div className="md:flex justify-center flex xl:w-full w-[1300px] lg:gap-8 gap-[20px] md:overflow-hidden ">
-              <div className="mt-[40px] max-w-[313px] max-h-[375px] ">
-                <img src="./images/frame1 (1).svg" alt="" />
-                <div className="relative bottom-[3.25rem] left-[32px]">
-                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Energy Efficiency</p>
-                </div>
-              </div>
-              <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame2 (1).svg" alt="" />
-                <div className="relative bottom-[3.25rem] left-[32px]">
-                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">LED Lighting</p>
-                </div>
-              </div>
-              <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame3 (1).svg" alt="" />
-                <div className="relative bottom-[3.25rem] left-[32px]">
-                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Photovoltaic Energy</p>
-                </div>
-              </div>
-              <div className="mt-[40px] w-[313px] h-[375px] ">
-                <img src="./images/frame4 (1).svg" alt="" />
-                <div className="relative bottom-[3.25rem] left-[32px]">
-                  <p className="text-[18px] text-[white] font-[400] leading-[25px]">Electric Mobility</p>
-                </div>
-              </div>
-            </div>
+        </div>
+
+        <div className="mt-[40px] w-[400px] h-[500px]">
+          <img className="w-full h-full object-cover rounded-[20px]" src="./images/frame2 (1).svg" alt="" />
+          <div className="relative bottom-[3.25rem] left-[32px]">
+            <p className="text-[18px] text-[white] font-[400] leading-[25px]">LED Lighting</p>
+          </div>
+        </div>
+
+        <div className="mt-[40px] w-[400px] h-[500px]">
+          <img className="w-full h-full object-cover rounded-[20px]" src="./images/frame3 (1).svg" alt="" />
+          <div className="relative bottom-[3.25rem] left-[32px]">
+            <p className="text-[18px] text-[white] font-[400] leading-[25px]">Photovoltaic Energy</p>
+          </div>
+        </div>
+
+        <div className="mt-[40px] w-[400px] h-[500px]">
+          <img className="w-full h-full object-cover rounded-[20px]" src="./images/frame4 (1).svg" alt="" />
+          <div className="relative bottom-[3.25rem] left-[32px]">
+            <p className="text-[18px] text-[white] font-[400] leading-[25px]">Electric Mobility</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
-      <div className="w-full xs:h-auto md:h-auto h-[300px] flex ">
+
+
+
+      <div className="w-full xs:h-auto md:h-auto h-[300px] flex md:mt-[5rem] pr-4">
         <div className="w-full md:w-[40%] hidden md:block"></div>
         <div className="w-[100%] md:w-[60%] pl-5 md:pr-5 xs:mt-[50px] md:mt-1">
           <p className="pr-14 text-[18px]">
@@ -99,19 +105,19 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-full h-auto bg-[#F4F4F4] xl:px-[100px]  px-4">
+      <div className="w-full h-auto bg-[#F4F4F4] xl:px-[100px] px-4 pb-8">
 
 
         <div className="md:flex lg:gap-[100px] xs:mt-[50px] sm-md:mt-[50px] gap-6 md:px-10 xl:pl-[80px]  md:mt-[150px]  ">
 
 
-          <div className=" w-full md:w-[50%] md:relative md:bottom-20">
+          <div className=" w-full md:w-[50%] md:relative bottom-20">
             <img className="w-full max-w-[500px] max-h-[600px]" src="./images/apar.svg" alt="Image" />
           </div>
 
 
 
-          <div className="md:w=[50%] w-full flex justify-center flex-col">
+          <div className="md:w=[50%] w-full flex justify-center flex-col mt-[2rem]">
             <h1 className="text-[40px] text-400 leading-[48px]">Deep knowledge in the field</h1>
             <p className="text-[18px] text-400 leading-[25px] mt-10">
               Our extensive experience and deep expertise in the energy sector
@@ -131,7 +137,7 @@ function Home() {
       </div>
 
 
-      <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[100px]  ">
+      <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[50px]  ">
         <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
           <h1 className="text-[40px] text-400 leading-[48px]">Get in touch with us</h1>
           <p className="text-[18px] text-400 leading-[25px] mt-10">

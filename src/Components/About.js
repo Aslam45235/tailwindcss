@@ -30,7 +30,7 @@ function About() {
           </h1>
         </div>
 
-        <div className="w-full flex justify-end mt-[100px] md:gap-3 px-4">
+        <div className="w-full md:flex justify-end mt-[5rem] md:gap-3 px-4">
           <div className="md:w-[40%] flex justify-end items-end">
             <div className="">
               <p className="text-[14px] leading-[20px] text-400 text-[#A6A6AB]">
