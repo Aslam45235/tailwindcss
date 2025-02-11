@@ -17,7 +17,7 @@ function Build() {
               Delloite Building, London
             </h1>
             <div className="mt-10 w-full">
-              <img className="" src="./images/build.svg" alt="" />
+              <img className=" w-full" src="./images/build.svg" alt="" />
             </div>
           </div>
         </div>

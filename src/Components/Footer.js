@@ -10,22 +10,22 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-[21px] mt-4">Pages</h3>
             <ul className="space-y-1">
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href="/services" className="hover:text-white transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href="/about" className="hover:text-white transition-colors">
                   About us
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href="/portfolio" className="hover:text-white transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href="/contact" className="hover:text-white transition-colors">
                   Contact us
                 </Link>
               </li>
@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-1">
               <li>
                 <Link
-                  to="/build"
+                  to="/legalpage"
                   className="hover:text-white transition-colors"
                 >
                   Privacy and Cookies Policy
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/legalpage"
+                  to="/"
                   className="hover:text-white transition-colors"
                 >
                   Terms & Conditions
@@ -73,13 +73,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-[100%] md:w-[50%] mt-10">
+        <div className="w-[100%] md:w-[50%] mt-12">
           <div className="flex justify-center sm:justify-end">
             <img src="./images/footer.svg" alt="" />
           </div>
         </div>
       </div>
-      <div className="flex md:justify-between px-4 md:px-[100px] md:flex-row flex-col justify-center items-center ">
+      <div className="flex md:justify-between px-4 md:px-[100px] md:flex-row flex-col justify-center items-center mt-5">
         <p className="text-[#FFFFFF] text-[14px]">
           &copy; {new Date().getFullYear()} Oakland -Energy Consulting ©
         </p>

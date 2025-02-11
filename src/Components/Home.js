@@ -124,8 +124,8 @@ function Home() {
       </div>
 
       <div className="w-full h-auto bg-[#F4F4F4] xl:px-[100px] px-4 pb-8">
-        <div className="md:flex lg:gap-[100px] xs:mt-[50px] sm-md:mt-[50px] gap-6 md:px-10 xl:pl-[80px]  md:mt-[150px]  ">
-          <div className=" w-full md:w-[50%] md:relative bottom-20">
+        <div className="md:flex lg:gap-[100px] xs:mt-[50px] sm-md:mt-[50px] gap-6 md:px-10 xl:pl-[80px]  md:mt-[150px] ">
+          <div className=" w-full md:w-[50%] relative md:bottom-20 md:relative pt-8">
             <img
               className="w-full max-w-[500px] max-h-[600px]"
               src="./images/apar.svg"

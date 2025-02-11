@@ -222,11 +222,12 @@ function Portfolio() {
                   className="group relative overflow-hidden rounded-lg"
                 >
                   {/* Rounded Image */}
-                  <img
+                  <Link to="/build"><img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
                   />
+                  </Link>
 
                   {/* Content Below Image */}
                   <div className="py-4  rounded-lg">
@@ -236,7 +237,7 @@ function Portfolio() {
                     <p className=" pl-2 inline-block text-[#212529] text-[18px]">
                       {project.location}
                     </p>
-                    <span className="block text-[#212529] text-[14px] mt-2">
+                    <span className="block text-gray-700 text-[14px] mt-2">
                       {project.category}
                     </span>
                   </div>
@@ -253,12 +254,13 @@ function Portfolio() {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`w-8 h-8 rounded-full text-[18px] text-[#212529]
-                                            ${currentPage === page ? "" : ""}`}
+                                            ${currentPage === page ? "1" : ""}`}
                     >
                       {page}
                     </button>
                   )
                 )}
+                <span className="text-[18] font-semibold ml-2 text-gray-600 pb-1 ">Proximo</span>
               </div>
             )}
           </div>

@@ -116,49 +116,50 @@ function Navbar({
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-all duration-300 ease-in-out ${
-          menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+  className={`md:hidden fixed inset-0 z-50 transition-all duration-300 ease-in-out ${
+    menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+  }`}
+>
+  <div
+    className={`flex justify-center items-start w-full h-full transform ${
+      menuOpen ? "translate-x-0" : "translate-x-full"
+    } transition-all duration-300 ease-in-out`}
+  >
+    <div
+      ref={menuRef}
+      style={{ color: Color }}
+      className="flex flex-col items-center rounded-lg  p-8 w-3/4 md:w-1/2 mt-16" // Added mt-16 for top spacing
+    >
+      <Link
+        className="navbar-a text-[16px] p-4 transition-colors"
+        to="/about"
       >
-        <div
-          className={`flex justify-center items-center w-full h-full transform ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-all duration-300 ease-in-out`}
-        >
-          <div
-            ref={menuRef}
-            style={{ color: Color }}
-            className="flex flex-col items-center bg-[#dcdceb] rounded-lg shadow-lg p-8 w-3/4 md:w-1/2"
-          >
-            <Link
-              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
-              to="/about"
-            >
-              About us
-            </Link>
-            <Link
-              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
-              to="/services"
-            >
-              Services
-            </Link>
-            <Link
-              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
-              to="/portfolio"
-            >
-              Portfolio
-            </Link>
-            <Link
-              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
-              to="/contact"
-            >
-              <button className="btn hover:text-[#A6A6AB] text-white px-7 py-4 rounded-lg mt-6 hover:hover:text-[#A6A6AB] transition-all">
-                Contact us
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+        About us
+      </Link>
+      <Link
+        className="navbar-a text-[16px] p-4 transition-colors"
+        to="/services"
+      >
+        Services
+      </Link>
+      <Link
+        className="navbar-a text-[16px] p-4 transition-colors"
+        to="/portfolio"
+      >
+        Portfolio
+      </Link>
+      <Link
+        className="navbar-a text-[16px] p-4 transition-colors"
+        to="/contact"
+      >
+        <button className="btn text-white px-7 py-4 rounded-lg mt-6 hover:text-[#A6A6AB] transition-all">
+          Contact us
+        </button>
+      </Link>
+    </div>
+  </div>
+</div>
+
     </>
   );
 }
