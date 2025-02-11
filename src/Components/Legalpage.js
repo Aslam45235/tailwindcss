@@ -28,7 +28,7 @@ function Legalpage() {
       <main className="w-full mt-[100px] px-4 lg:px-[100px]">
         <div className="space-y-8">
           {/* Information Usage Section */}
-          <div className="w-[80%]">
+          <div className="">
             <h2 className="text-[#212529] leading-[48px] text-[40px]">
               1. Information we collect
             </h2>
@@ -44,7 +44,7 @@ function Legalpage() {
             </p>
           </div>
 
-          <div className="w-[80%]">
+          <div className="">
             <h2 className="text-[#212529] leading-[48px] text-[40px]">
               2. How we use your information
             </h2>
@@ -60,7 +60,7 @@ function Legalpage() {
             </p>
           </div>
 
-          <div className="w-[80%]">
+          <div className="">
             <h2 className="text-[#212529] leading-[48px] text-[40px]">
               3. Communication
             </h2>
@@ -71,7 +71,7 @@ function Legalpage() {
               communications at any time.
             </p>
           </div>
-          <div className="w-[80%]">
+          <div className="">
             <h2 className="text-[#212529] leading-[48px] text-[40px]">
               4. Cookies and Tracking Technologies
             </h2>
@@ -85,7 +85,7 @@ function Legalpage() {
               your browser settings.
             </p>
           </div>
-          <div className="w-[80%]">
+          <div className="">
             <h2 className="text-[#212529] leading-[48px] text-[40px]">
               5. Security
             </h2>

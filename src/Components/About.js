@@ -7,7 +7,7 @@ function About() {
     <>
       <div className="w-full h-[590px]">
         <div className="absolute w-full md:w-full lg:w-full">
-          <Navbar buttontextcolor="white" buttonColor="black"/>
+          <Navbar buttontextcolor="white" buttonColor="black" />
         </div>
         <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[763px] h-[763px] lg:px-[100px]  px-4">
           <div className="pt-[550px] md:h-[auto]">
@@ -22,7 +22,7 @@ function About() {
         </div>
       </div>
 
-      <div className="main w-full h-[1029px] xl:h-[1029px] mt-[250px] md:px-20 px-4 lg:px-[100px] ">
+      <div className="main w-full h-auto mt-[250px] md:px-20 px-4 lg:px-[100px] ">
         <div>
           <h1 className="text-[40px] text-400 leading-[48px]">
             Innovation. <br />
@@ -32,10 +32,9 @@ function About() {
 
         <div className="w-full md:flex justify-end mt-[5rem] md:gap-3 px-4">
           <div className="md:w-[40%] flex justify-end items-end">
-            <div className="">
+            <div className="text-right w-[10rem]">
               <p className="text-[14px] leading-[20px] text-400 text-[#A6A6AB]">
-                Executive Board members <br />
-                Oakland. 2023
+                Executive Board members Oakland. 2023
               </p>
             </div>
           </div>
@@ -62,14 +61,14 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full flex justify-end items-end xl:h-auto h-[180px] md:min-h-[20%px] md:px-[50px] xl:px-[100px] xl:pt-[100px] mt-[15px]  lg:mt-[100px] px-5">
+      <div className="w-full flex justify-center h-auto md:px-[50px] px-4 mt-[5rem]">
         <div>
-          <img src="./images/tree.svg" alt="" />
+          <img src="./images/tree.svg" className="w-full h-auto" alt="" />
         </div>
       </div>
 
       <div className="md:px-[100px] px-3 flex md:justify-end">
-        <div className="w-[408px] md:w-auto lg:w-[700px] mt-[100px] px-4">
+        <div className="w-[408px] md:w-auto lg:w-[700px] mt-[50px] px-4">
           <p className="text-[18px] text-400 leading-[25px] mt-10 ">
             From our company's inception, innovation has been ingrained in our
             DNA. It's not just a buzzword; it's the driving force behind

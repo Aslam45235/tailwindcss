@@ -130,8 +130,12 @@ function Portfolio() {
         </div>
         <div
           className="lg:full bg-no-repeat bg-cover md:bg-cover md:w-full w-full md:h-[763px] h-[763px] lg:px-[100px]  px-4"
-          style={{backgroundImage : `url(${imageUrl})` ,
-          backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
+          style={{
+            backgroundImage: `url(${imageUrl})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
         >
           <div className="pt-[550px] md:h-[auto] text-[white]">
             <h1 className="text-[40px] text-400 leading-[48px]">Portfolio</h1>
@@ -146,11 +150,11 @@ function Portfolio() {
       </div>
 
       <div className="w-full px-2 lg:px-[100px]">
-        <div className="min-w-[20%] md:w-[700px] mt-[300px] px-4">
+        <div className="w-full md-w-[50%] mt-[300px] px-4">
           <h1 className="text-[40px] text-400 leading-[48px]">
-            Proudly helping businesses
+            The distinction that sets us Apart in the industry
           </h1>
-          <p className="text-[18px] text-400 leading-[25px] mt-10">
+          <p className="text-[18px] max-w-[700px] text-400 leading-[25px] mt-10">
             In a highly competitive industry, what distinguishes a company is
             not just its offerings but its unwavering commitment to excellence
             and innovation. At Oakland C.E., we understand that to rise above
@@ -158,7 +162,7 @@ function Portfolio() {
             aspect of our business. Our journey in the energy sector has been
             defined by innovation and expertise.
           </p>
-          <div className="mt-10 text-[18px] text-400 leading-[25px] flex justify-between">
+          <div className="mt-10 text-[18px] text-400 leading-[25px] flex justify-between max-w-[1000px] gap-[2rem] md:px-4 px-4">
             <div className="flex justify-center items-center">
               <img src="./images/invoation.svg" alt="" />
               <span className="ml-2 text-[15px] md:text-[32px]">
@@ -274,8 +278,11 @@ function Portfolio() {
             your specific needs and goals.
           </p>
           <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
-                    <Link to="/portfolio"> <img src="./images/Linkbt.svg" alt="" /> </Link>
-            </div>
+            <Link to="/portfolio">
+              {" "}
+              <img src="./images/Linkbt.svg" alt="" />{" "}
+            </Link>
+          </div>
         </div>
       </div>
 

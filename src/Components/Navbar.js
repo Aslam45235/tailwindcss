@@ -1,8 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import "../App.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , buttonOpacity=1, menuColor}) {
+function Navbar({
+  Color,
+  backgroundColor,
+  buttonColor,
+  buttontextcolor,
+  buttonOpacity = 1,
+  menuColor,
+}) {
   // State to track whether the mobile menu is open or closed
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,7 +18,7 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
 
   // Function to toggle the menu visibility
   const toggleMenu = () => {
-    setMenuOpen(prev => !prev);
+    setMenuOpen((prev) => !prev);
   };
 
   // Close the menu when clicking outside of it
@@ -23,37 +30,84 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
     };
 
     // Add event listener to detect clicks outside the menu
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     // Cleanup the event listener on component unmount
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
     <>
-      <div className='md:w-full flex h-[109px] md:px-[20px] lg:px-[100px] w-full items-center justify-between px-5 pt-[16px]' style={{ backgroundColor }}>
-      <Link to="/"><div style={{ color: Color }} className='flex justify-center items-center'>
-          <img className='mr-4' src='./images/logo.svg' alt='' />
-          <p className='P-tag' style={{ color: menuColor }}>
-            <span className='block span'style={{ color: Color }}>Oaklan</span>
-            Energy Consulting
-          </p>
-        </div></Link>
+      <div
+        className="md:w-full flex h-[109px] md:px-[20px] lg:px-[100px] w-full items-center justify-between px-5 pt-[16px]"
+        style={{ backgroundColor }}
+      >
+        <Link to="/">
+          <div
+            style={{ color: Color }}
+            className="flex justify-center items-center"
+          >
+            <img
+              className="mr-4"
+              src="./images/logo.svg"
+              alt=""
+              style={{ color: buttonColor }}
+            />
+            <p className="P-tag" style={{ color: menuColor }}>
+              <span className="block span" style={{ color: Color }}>
+                Oaklan
+              </span>
+              Energy Consulting
+            </p>
+          </div>
+        </Link>
 
         {/* Desktop menu */}
-        <div className='md:block hidden'>
-          <Link className='navbar-a md:mx-4 md:text-[18px]' style={{ color: Color }} to="/about">About us</Link>
-          <Link className='navbar-a md:mx-4 md:text-[18px]' style={{ color: Color }} to="/services">Services</Link>
-          <Link className='navbar-a md:mx-4 md:text-[18px]' style={{ color: Color }} to="/portfolio">Portfolio</Link>
-          <Link className='navbar-a md:mx-4 md:text-[18px]' to="/contact">
-            <button  className='btn md:px-[40px] md:py-[16px];'  style={{ backgroundColor: buttonColor, color: Color, color:buttontextcolor,  opacity: buttonOpacity}}> <span style={{color:Color}}>Contact us</span></button>
+        <div className="md:block hidden">
+          <Link
+            className="navbar-a md:mx-4 md:text-[18px]"
+            style={{ color: Color }}
+            to="/about"
+          >
+            About us
+          </Link>
+          <Link
+            className="navbar-a md:mx-4 md:text-[18px]"
+            style={{ color: Color }}
+            to="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className="navbar-a md:mx-4 md:text-[18px]"
+            style={{ color: Color }}
+            to="/portfolio"
+          >
+            Portfolio
+          </Link>
+          <Link className="navbar-a md:mx-4 md:text-[18px]" to="/contact">
+            <button
+              className="btn md:px-[40px] md:py-[16px];"
+              style={{
+                backgroundColor: buttonColor,
+                color: Color,
+                color: buttontextcolor,
+                opacity: buttonOpacity,
+              }}
+            >
+              {" "}
+              <span style={{ color: Color }}>Contact us</span>
+            </button>
           </Link>
         </div>
 
         {/* Mobile menu icon */}
-        <div className='md:hidden rounded-[50%]' style={{ backgroundColor: buttonColor }}>
+        <div
+          className="md:hidden rounded-[50%]"
+          style={{ backgroundColor: buttonColor }}
+        >
           <a href="#" onClick={toggleMenu}>
             <img src="./images/menu.svg" alt="" />
           </a>
@@ -61,17 +115,43 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-all duration-300 ease-in-out ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <div className={`flex justify-center items-center w-full h-full transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all duration-300 ease-in-out`}>
+      <div
+        className={`md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-all duration-300 ease-in-out ${
+          menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div
+          className={`flex justify-center items-center w-full h-full transform ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-all duration-300 ease-in-out`}
+        >
           <div
             ref={menuRef}
             style={{ color: Color }}
             className="flex flex-col items-center bg-[#dcdceb] rounded-lg shadow-lg p-8 w-3/4 md:w-1/2"
           >
-            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/about">About us</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/services">Services</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/portfolio">Portfolio</Link>
-            <Link className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors" to="/contact">
+            <Link
+              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
+              to="/about"
+            >
+              About us
+            </Link>
+            <Link
+              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
+              to="/services"
+            >
+              Services
+            </Link>
+            <Link
+              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
+            <Link
+              className="navbar-a text-[16px] p-4 hover:text-[#A6A6AB] transition-colors"
+              to="/contact"
+            >
               <button className="btn hover:text-[#A6A6AB] text-white px-7 py-4 rounded-lg mt-6 hover:hover:text-[#A6A6AB] transition-all">
                 Contact us
               </button>
@@ -84,4 +164,3 @@ function Navbar({ Color, backgroundColor , buttonColor , buttontextcolor , butto
 }
 
 export default Navbar;
-
