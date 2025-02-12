@@ -11,7 +11,7 @@ function Home() {
           <Navbar Color="white" menuColor="#A6A6AB" />
         </div>
 
-        <div className="lg:full bg-black md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16 xl:px-[100px]">
+        <div className="lg:full bg-[#212529] md:w-[50%] w-full md:h-[982px] h-[813px] lg:px-16 xl:px-[100px]">
           <div className="px-4 pt-[380px]  md:pt-[550px]">
             <h1 className=" leading-[77px] text-white text-[64px]  text-400">
               Redefining <br />
@@ -52,7 +52,7 @@ function Home() {
             </p>
           </div>
           <div className="overflow-x-auto w-full xoverflow-hidden md:w-full">
-            <div className="flex min-w-max justify-between md:overflow-hidden">
+            <div className="flex min-w-max justify-between gap-6 md:overflow-hidden">
               <div className="mt-[40px] w-[400px] h-[500px]">
                 <img
                   className="w-full h-full object-cover rounded-[20px]"
