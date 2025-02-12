@@ -10,6 +10,7 @@ function Build() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="black" buttonColor="black" buttontextcolor="white" />
         </div>
+        
         <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[700px] h-[750px] lg:px-16 px-4">
           <div className="pt-[500px] w-full md:h-auto">
             <h3 className="text-[#A6A6AB] text-[18px]">PORTFOLIO</h3>
@@ -19,6 +20,7 @@ function Build() {
             <div className="mt-10 w-full flex justify-between">
               <img className="" src="./images/left.svg" alt="" />
               <img className="" src="./images/right.svg" alt="" />
+              
             </div>
           </div>
         </div>
@@ -66,7 +68,7 @@ function Build() {
       <div className="p-5 px-3 flex w-full md:px-[100px]">
         <div className="w-[22%]  hidden md:block"></div>
         <div className="w-[100%] mt-[30px] md:w-[70%]  ">
-          <img src="./images/buildbg1.svg" alt=""className="w-full h-auto" />
+          <img src="./images/buildbg1.svg" alt=""className="w-full max-h-[450px]" />
         </div>
       </div>
 
