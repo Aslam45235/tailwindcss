@@ -169,12 +169,12 @@ function Home() {
             collaborate, and provide you with tailored solutions that align with
             your specific needs and goals.
           </p>
-          <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
-            <Link to="/contact">
-              {" "}
-              <img src="./images/Linkbt.svg" alt="" />{" "}
-            </Link>
-          </div>
+          <Link to="/contact">
+            <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
+              <p>Contact us</p>
+              <img src="./images/arrow.svg" alt="" className="pt-1 pl-2" />
+            </div>
+          </Link>
         </div>
       </div>
 

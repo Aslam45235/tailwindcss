@@ -27,7 +27,7 @@ function Services() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="white" />
         </div>
-        <div className="lg:full bg-[#000000] md:w-full  h-[800px] lg:px-[100px]  px-4">
+        <div className="lg:full bg-[#212529] md:w-full  h-[800px] lg:px-[100px]  px-4">
           <div className="pt-[550px]">
             <h1 className="text-[40px] text-400 leading-[48px]">Services</h1>
             <div className="md:w-[535px]">
@@ -118,12 +118,12 @@ function Services() {
               sustainability converge. Discover how we've transformed energy
               landscapes and elevated standards in the industry.
             </p>
+              <Link to="/portfolio">
             <div className="mt-10 text-[18px] text-400 leading-[25px] flex items-center">
-              <Link to="/build">
-                {" "}
-                <img src="./images/LinkB.svg" alt="" />{" "}
-              </Link>
+                <p>View our Portfolio</p>
+                <img src="./images/arrow.svg" alt="" className="pt-1 pl-2"/>
             </div>
+              </Link>
           </div>
         </div>
       </div>
