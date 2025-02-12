@@ -52,10 +52,10 @@ function Home() {
             </p>
           </div>
           <div className="overflow-x-auto w-full xoverflow-hidden md:w-full">
-            <div className="flex min-w-max justify-between gap-6 md:overflow-hidden">
-              <div className="mt-[40px] w-[400px] h-[500px]">
+            <div className="flex min-w-max md:justify-between justify-center gap-4 max-h-full md:overflow-hidden">
+              <div className="mt-[40px] md:w-[400px] w-[316px] h-[390px] md:h-[500px]">
                 <img
-                  className="w-full h-full object-cover rounded-[20px]"
+                  className="md:w-full md:h-full w-[313px] h-[375] md: object-cover rounded-[20px]"
                   src="./images/frame1 (1).svg"
                   alt=""
                 />
@@ -66,9 +66,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-[40px] w-[400px] h-[500px]">
+              <div className="mt-[40px] md:w-[400px] w-[316px] h-[390px] md:h-[500px]">
                 <img
-                  className="w-full h-full object-cover rounded-[20px]"
+                  className="md:w-full md:h-full w-[313px] h-[375] md:object-cover rounded-[20px]"
                   src="./images/frame2 (1).svg"
                   alt=""
                 />
@@ -79,9 +79,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-[40px] w-[400px] h-[500px]">
+              <div className="mt-[40px] md:w-[400px] w-[316px] h-[390px] md:h-[500px]">
                 <img
-                  className="w-full h-full object-cover rounded-[20px]"
+                  className="md:w-full md:h-full w-[313px] h-[375] md:object-cover rounded-[20px]"
                   src="./images/frame3 (1).svg"
                   alt=""
                 />
@@ -92,9 +92,9 @@ function Home() {
                 </div>
               </div>
 
-              <div className="mt-[40px] w-[400px] h-[500px]">
+              <div className="mt-[40px] md:w-[400px] w-[316px] h-[390px] md:h-[500px]">
                 <img
-                  className="w-full h-full object-cover rounded-[20px]"
+                  className="md:w-full md:h-full w-[313px] h-[375] md:object-cover rounded-[20px]"
                   src="./images/frame4 (1).svg"
                   alt=""
                 />
