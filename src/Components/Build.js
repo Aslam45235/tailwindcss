@@ -10,14 +10,15 @@ function Build() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="black" buttonColor="black" buttontextcolor="white" />
         </div>
-        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[700px] h-[700px] lg:px-16 px-4">
+        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[700px] h-[750px] lg:px-16 px-4">
           <div className="pt-[500px] w-full md:h-auto">
             <h3 className="text-[#A6A6AB] text-[18px]">PORTFOLIO</h3>
             <h1 className="text-[40px] text-400 leading-[48px] mt-6">
               Delloite Building, London
             </h1>
-            <div className="mt-10 w-full">
-              <img className="w-full " src="./images/build.svg" alt="" />
+            <div className="mt-10 w-full flex justify-between">
+              <img className="" src="./images/left.svg" alt="" />
+              <img className="" src="./images/right.svg" alt="" />
             </div>
           </div>
         </div>
