@@ -10,22 +10,22 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-[21px] mt-4">Pages</h3>
             <ul className="space-y-1">
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
+                <Link to="/services" className="hover:text-white transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">
+                <Link to="/about" className="hover:text-white transition-colors">
                   About us
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="hover:text-white transition-colors">
+                <Link to="/portfolio" className="hover:text-white transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">
+                <Link to="/contact" className="hover:text-white transition-colors">
                   Contact us
                 </Link>
               </li>

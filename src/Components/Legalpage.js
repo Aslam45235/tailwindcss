@@ -9,12 +9,12 @@ function Legalpage() {
         <div className="absolute w-full md:w-full lg:w-full">
           <Navbar color="black" />
         </div>
-        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[635px] h-[640px] lg:px-[100px] px-4">
+        <div className="lg:full bg-[#F4F4F4] md:w-full w-full md:h-[635px] h-auto lg:px-[100px] px-4">
           <div className="pt-[450px]">
             <h1 className="text-[40px] text-400 leading-[48px]">
               Privacy and Cookies Policy
             </h1>
-            <div className="md:w-[535px]">
+            <div className="md:w-[535px] pb-8">
               <p className="text-[18px] text-400 leading-[25px] mt-10">
                 This privacy is designed to inform you about how we collect,
                 use, and protect your personal information when you interact

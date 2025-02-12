@@ -23,7 +23,7 @@ function Home() {
               needs.
             </p>
             <Link to="/portfolio">
-              <button className="px-[40px] py-[16px] mt-[48px] bg-white rounded-[40px]">
+              <button className="px-[40px] py-[16px] mt-[48px] text-[18px] bg-white rounded-[40px]">
                 View our Portfolio
               </button>
             </Link>
@@ -52,7 +52,7 @@ function Home() {
             </p>
           </div>
           <div className="overflow-x-auto w-full xoverflow-hidden md:w-full">
-            <div className="flex gap-5 min-w-max">
+            <div className="flex min-w-max justify-between md:overflow-hidden">
               <div className="mt-[40px] w-[400px] h-[500px]">
                 <img
                   className="w-full h-full object-cover rounded-[20px]"

@@ -258,7 +258,7 @@ function Portfolio() {
                     </button>
                   )
                 )}
-                <span className="text-[18] font-semibold ml-2 text-gray-600 pb-1 ">Proximo</span>
+                <span className="text-[18px] font-semibold ml-2 text-[#212529] pb-1 opacity-50 ">Proximo</span>
               </div>
             )}
           </div>

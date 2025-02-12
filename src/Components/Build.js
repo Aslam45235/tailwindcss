@@ -17,7 +17,7 @@ function Build() {
               Delloite Building, London
             </h1>
             <div className="mt-10 w-full">
-              <img className=" w-full" src="./images/build.svg" alt="" />
+              <img className="w-full " src="./images/build.svg" alt="" />
             </div>
           </div>
         </div>
@@ -57,20 +57,20 @@ function Build() {
 
       <div className="p-5 px-3 flex w-full md:px-[100px]">
         <div className="md:w-[70%]  w-[100%]">
-          <img src="./images/buildbg.svg" alt="" />
+          <img src="./images/buildbg.svg" alt="" className="w-full" />
         </div>
         <div className="w-[30%] hidden md:block"></div>
       </div>
 
       <div className="p-5 px-3 flex w-full md:px-[100px]">
-        <div className="w-[30%]  hidden md:block"></div>
+        <div className="w-[22%]  hidden md:block"></div>
         <div className="w-[100%] mt-[30px] md:w-[70%]  ">
-          <img src="./images/buildbg1.svg" alt="" />
+          <img src="./images/buildbg1.svg" alt=""className="w-full h-auto" />
         </div>
       </div>
 
       <div className="md:pl-10  md:w=[100%] w-full p-4 lg:px-[100px]">
-        <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[150px]">
+        <div className=" 2xl:w-[50%] 2xl:pl-[100px] lg:w-[50%] md:w=[50%] w-full md:mt-10 mt-8 2xl:mt-[100px]">
           <h1 className="text-[40px] text-400 leading-[48px]">
             Get in touch with us
           </h1>
